@@ -53,3 +53,5 @@ if clean_text == reverse_text:  # Check if palindrome
     print("It is a palindrome")
 else:
     print("It is not a palindrome")
+
+  
