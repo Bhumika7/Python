@@ -3,7 +3,7 @@
 # get a list of multiple numbers
 # sort list in ascending order
 # the last number in the list is the largest number
-'''
+
 num = int(input('Enter count on the list: '))
 num_list = [] 
 
@@ -63,7 +63,7 @@ for i in range(count):
     numbers.append(value)
 
 print("Largest number is:", max(numbers)) # max function
-'''
+
 # Return the sum of all numbers in a list
 count = int(input('Enter the count: '))
 num = []
@@ -73,3 +73,40 @@ for i in range(count):
   num.append(user_input)
 
 print('The total sum is: ', sum(num))
+
+
+# Return whether a target appears in a list
+count = int(input('Enter the count: '))
+target = int(input('Enter a target: '))
+numbers = []
+
+for i in range(count):
+    List = int(input('Enter the elements in the list: '))
+    numbers.append(List)
+
+if target in numbers:
+   print('The target appears in the list')
+
+else:
+   print("The target doesn't appears in the list")
+
+
+# Return all duplicates in a list of numbers
+# enter user count
+# create an seen set to store numbers already seen 
+# create an emty set to store duplicates in the list
+
+count = int(input('Enter the count: '))
+Number_seen = set()
+Duplicates = set()
+
+for i in range(count):
+  num_list = int(input('Enter the elements in the list: '))
+  
+  if num_list in Number_seen:
+    Duplicates.add(num_list)
+
+  else:
+    Number_seen.add(num_list)
+
+print(Duplicates)
