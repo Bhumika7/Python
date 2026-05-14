@@ -3,7 +3,7 @@
 # get a list of multiple numbers
 # sort list in ascending order
 # the last number in the list is the largest number
-
+'''
 num = int(input('Enter count on the list: '))
 num_list = [] 
 
@@ -63,3 +63,13 @@ for i in range(count):
     numbers.append(value)
 
 print("Largest number is:", max(numbers)) # max function
+'''
+# Return the sum of all numbers in a list
+count = int(input('Enter the count: '))
+num = []
+
+for i in range(count):
+  user_input = int(input('Enter the numbers in the list: '))
+  num.append(user_input)
+
+print('The total sum is: ', sum(num))
